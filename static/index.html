@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>plant chat</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <div id="status" class="pending"></div>
+
+    <main>
+<!--
+    
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <label for="username">Username:</label>
+          <input type="text" id="username" />
+          <button id="ok-button">OK</button>
+        </div>
+      </div>
+-->
+      <div id="popup" class="popup">
+        
+        <div class="popup-content">
+          <p class = "text popup-element-padding"> What should we call you🤔? </p>
+
+          <input type="text" id="username-text" class = "popup-element-padding" />
+          <div>
+          <button id="ok-button">submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sidebar">
+        
+
+        <div id="room-list">
+          <template id="room">
+            <button class="room"></button>
+          </template>
+        </div>
+
+        <form id="new-room">
+          <input type="text" name="name" id="name" autocomplete="off"
+              placeholder="new room..." maxlength="29"></input>
+          <button type="submit">+</button>
+        </form>
+      </div>
+
+      <div id="content">
+
+        <div id="messages">
+          <template id="message">
+            <div class="message">
+              <span class="username"></span>
+              <span class="text"></span>
+            </div>
+          </template>
+        </div>
+
+        <form id="new-message"><!--
+          <input type="text" name="username" id="username" maxlength="19"
+            placeholder="guest" autocomplete="off">-->
+          <input type="text" name="message" id="message" autocomplete="off"
+              placeholder="Send a message..." autofocus>
+          <button type="submit" id="send">Send</button>
+        </form>
+      </div>
+    </main>
+
+    
+  
+  </body>
+</html>
